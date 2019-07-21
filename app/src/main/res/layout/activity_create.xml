@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorusername"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".startup.CreateActivity">
+
+    <ImageView
+        android:id="@+id/create_home_acc_logo"
+        android:layout_width="213dp"
+        android:layout_height="179dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_action_man" />
+
+    <ImageView
+        android:id="@+id/create_acc_image"
+        android:layout_width="225dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_home_acc_logo"
+        app:srcCompat="@drawable/createaccount" />
+
+    <ImageView
+        android:id="@+id/create_acc_arrow"
+        android:layout_width="105dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_acc_conform_pwd"
+        app:srcCompat="@drawable/accbutton" />
+
+    <ImageView
+        android:id="@+id/create_acc_username"
+        android:layout_width="294dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/create_acc_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_acc_image"
+        app:srcCompat="@drawable/createaccbar" />
+
+    <EditText
+        android:id="@+id/create_acc_username_text"
+        android:layout_width="266dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Your Username"
+        android:background="@null"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorsignupbackground"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/create_acc_username"
+        app:layout_constraintEnd_toEndOf="@+id/create_acc_username"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="@+id/create_acc_username"
+        app:layout_constraintTop_toTopOf="@+id/create_acc_username"
+        app:layout_constraintVertical_bias="0.538" />
+
+    <ImageView
+        android:id="@+id/create_acc_email"
+        android:layout_width="294dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/create_acc_pwd_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_acc_username_text"
+        app:srcCompat="@drawable/createaccbar" />
+
+    <EditText
+        android:id="@+id/create_acc_email_text"
+        android:layout_width="266dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Your Email"
+        android:background="@null"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/colorsignupbackground"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/create_acc_email"
+        app:layout_constraintEnd_toEndOf="@+id/create_acc_email"
+        app:layout_constraintStart_toStartOf="@+id/create_acc_email"
+        app:layout_constraintTop_toTopOf="@+id/create_acc_email"
+        app:layout_constraintVertical_bias="0.461" />
+
+    <ImageView
+        android:id="@+id/create_acc_pwd"
+        android:layout_width="291dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/create_acc_conform_pwd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_acc_email_text"
+        app:srcCompat="@drawable/createaccbar" />
+
+    <EditText
+        android:id="@+id/create_acc_pwd_text"
+        android:layout_width="266dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Your Password"
+        android:inputType="textPassword"
+        android:background="@null"
+        android:textColorHint="@color/colorsignupbackground"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/create_acc_pwd"
+        app:layout_constraintEnd_toEndOf="@+id/create_acc_pwd"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="@+id/create_acc_pwd"
+        app:layout_constraintTop_toTopOf="@+id/create_acc_pwd"
+        app:layout_constraintVertical_bias="0.461" />
+
+    <ImageView
+        android:id="@+id/create_acc_conform_pwd"
+        android:layout_width="299dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/create_acc_arrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_acc_pwd_text"
+        app:layout_constraintVertical_bias="0.151"
+        app:srcCompat="@drawable/createaccbar" />
+
+    <EditText
+        android:id="@+id/create_acc_conform_pwd_text"
+        android:layout_width="266dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Conform Pasword"
+        android:paddingBottom="8dp"
+        android:inputType="textPassword"
+        android:background="@null"
+        android:textColorHint="@color/colorsignupbackground"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/create_acc_conform_pwd"
+        app:layout_constraintEnd_toEndOf="@+id/create_acc_conform_pwd"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="@+id/create_acc_conform_pwd"
+        app:layout_constraintTop_toTopOf="@+id/create_acc_conform_pwd"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Room Rental</string>
+    <string name="action_sign_in_short">Register</string>
+    <string name="email">Email</string>
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+    <string name="change_email">Change Email</string>
+    <string name="change_password">Change Password</string>
+    <string name="send_password_reset_email">Send Password reset email</string>
+    <string name="remove_user">Remove user</string>
+    <string name="new_pass">New Password</string>
+    <string name="title_activity_profile">Firebase</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="prompt_password">Please enter your password</string>
+    <string name="btn_link_to_register">Not a member? Get registered in Firebase now!</string>
+    <string name="btn_link_to_login">Already registered. Login Me!</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="btn_forgot_password">Forgot your password?</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="btn_back"><![CDATA[<< Back]]></string>
+    <string name="hint_new_email">New Email</string>
+    <string name="btn_change">Change</string>
+    <string name="btn_send">Send</string>
+    <string name="btn_remove">Remove</string>
+    <string name="btn_sign_out">Sign Out</string>
+    <string name="lbl_forgot_password">Forgot password?</string>
+    <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
+    <string name="email_id">Email ID</string>
+    <string name="string_ipen_camera">Open Camera</string>
+    <string name="string_open_string">Open String</string>
+    <string name="string_open_camera">Open Camera</string>
+
+    <string name="gallery">GALLERY</string>
+    <string name="photo">PHOTO</string>
+    <string name="string_next">Next</string>
+    <string name="calling_activity">calling_activity</string>
+    <string name="selected_image">selected_image</string>
+    <string name="string_share">Share</string>
+    <string name="sync_pref">Sync</string>
+    <string name="sync_pref_summary">Get your photos, videos,contact etcon all your devices.</string>
+    <string name="pref_syncConnectionType">Sync Connection Type</string>
+    <string name="pref_syncConnectionType_dialog_title">Perform Sync Using</string>
+    <string name="pref_syncConnectionType_default_value">WiFi</string>
+    <string name="pref_syncConnectionType_summary">WiFi</string>
+    <string-array name="pref_syncConnectionType_entries">
+        <item> WiFi</item>
+        <item>Mobile</item>
+        <item>WiFi/Mobile</item>
+
+    </string-array>
+    <string-array name="pref_syncConnectionType_values">
+        <item>WiFi</item>
+        <item>Mobile</item>
+        <item>WiFi_Mobile</item>
+    </string-array>
+    <string name="title_activity_map_search_activity">Map</string>
+
+</resources>
