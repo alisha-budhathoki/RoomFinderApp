@@ -55,7 +55,8 @@ public class Userprofile extends AppCompatActivity {
                 startActivityForResult(intent, RESULT_LOAD_IMG);
             }
         });
-//¤¥¤¥¤
+//¤¥¤¥¤asdasd
+
 
     }
 //    @Override
