@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "809694241171",
+    "firebase_url": "https://roomrental13-36686.firebaseio.com",
+    "project_id": "roomrental13-36686",
+    "storage_bucket": "roomrental13-36686.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809694241171:android:2814926a59ec7299",
+        "android_client_info": {
+          "package_name": "com.example.roomrental"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809694241171-usgaf3ffvsln24t9eco1tp05evg5kgdu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWmj-fFNdWFJ4Rebe8evhjlyK8gc_SAKo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "809694241171-usgaf3ffvsln24t9eco1tp05evg5kgdu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
