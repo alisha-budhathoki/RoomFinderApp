@@ -3,13 +3,13 @@ package com.example.roomrental;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
+
+import com.example.roomrental.Upload.UploadActivity;
 
 public class AddFragment extends Fragment {
     public AddFragment(){
@@ -23,7 +23,7 @@ public class AddFragment extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent in = new Intent(getActivity(),Upload.class);
+                Intent in = new Intent(getActivity(), UploadActivity.class);
                in.putExtra("some","somedata");
                startActivity(in);
             }

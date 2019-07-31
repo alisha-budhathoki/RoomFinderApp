@@ -28,7 +28,7 @@
         <activity android:name=".startup.CreateActivity" />
         <activity android:name=".Upload.UploadActivity"/>
         <activity android:name=".Setting"/>
-        <activity android:name=".profile.Userprofile"/>
+        <activity android:name=".profile.EditProfile"/>
         <activity android:name=".room.RoomDetailActivity" />
 
 

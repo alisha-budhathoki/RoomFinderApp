@@ -82,5 +82,8 @@
     <string name="calling_category">calling category</string>
     <string name="calling_room_detail">Calling Room</string>
     <string name="calling_others_detail">calling others</string>
+    <string name="emailid">Email</string>
+    <string name="username">Username</string>
+
 
 </resources>

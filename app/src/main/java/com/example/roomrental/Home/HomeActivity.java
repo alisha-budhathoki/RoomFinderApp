@@ -1,6 +1,7 @@
 package com.example.roomrental.Home;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -10,15 +11,15 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 
-import com.example.roomrental.MoreFragment;
+import com.example.roomrental.AddFragment;
 import com.example.roomrental.NotificationFragment;
 import com.example.roomrental.R;
 import com.example.roomrental.SearchFragment;
-import com.example.roomrental.Upload.AddFragment;
-import com.example.roomrental.profile.Userprofile;
+import com.example.roomrental.Setting;
+import com.example.roomrental.profile.ProfileFragment;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity implements ProfileFragment.OnFragmentInteractionListener {
     private ImageButton mimageButton;
     //ImageButton imageButton;
     private FirebaseAuth mAuth;
@@ -28,14 +29,13 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_activity);
         BottomNavigationView bottomNav = findViewById(R.id.nav_view);
-        ImageButton imageButton = findViewById(R.id.user_detail);
-
+        ImageButton imageButton = findViewById(R.id.settings);
         bottomNav.setOnNavigationItemSelectedListener(navListner);
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(getApplicationContext(), Userprofile.class));
+                startActivity(new Intent(getApplicationContext(), Setting.class));
             }
         });
 
@@ -62,7 +62,7 @@ public class HomeActivity extends AppCompatActivity {
                             selectedFragment = new NotificationFragment();
                             break;
                         case R.id.nav_setting:
-                            selectedFragment = new MoreFragment();
+                            selectedFragment = new ProfileFragment();
                             break;
                     }
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
@@ -74,4 +74,8 @@ public class HomeActivity extends AppCompatActivity {
         moveTaskToBack(true);
     }
 
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
+    }
 }

@@ -18,6 +18,6 @@
         android:title="Notification"/>
     <item
         android:id="@+id/nav_setting"
-        android:icon="@drawable/ic_more"
-        android:title="More"/>
+        android:icon="@drawable/ic_action_man"
+        android:title="Prrofile"/>
 </menu>

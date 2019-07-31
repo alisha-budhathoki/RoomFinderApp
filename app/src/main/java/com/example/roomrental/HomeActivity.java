@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.example.roomrental.profile.ProfileFragment;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class HomeActivity extends AppCompatActivity {
@@ -22,7 +23,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_activity);
         BottomNavigationView bottomNav = findViewById(R.id.nav_view);
-        ImageButton imageButton = findViewById(R.id.user_detail);
+        ImageButton imageButton = findViewById(R.id.settings);
         bottomNav.setOnNavigationItemSelectedListener(navListner);
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,7 +56,7 @@ public class HomeActivity extends AppCompatActivity {
                             selectedFragment = new NotificationFragment();
                             break;
                         case R.id.nav_setting:
-                            selectedFragment = new MoreFragment();
+                            selectedFragment = new ProfileFragment();
                             break;
                     }
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();

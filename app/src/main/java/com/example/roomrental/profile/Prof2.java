@@ -1,7 +1,6 @@
-package com.example.roomrental.profile;
-
-//package com.example.roomrental.Upload;
-
+//package com.example.roomrental.profile;
+//
+//
 //import android.Manifest;
 //import android.app.ProgressDialog;
 //import android.content.Intent;
