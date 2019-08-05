@@ -30,7 +30,7 @@ public class RoomRecyclerAdapter extends RecyclerView.Adapter<RoomRecyclerAdapte
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         return new MyViewHolder(LayoutInflater.from(
-                mContext).inflate(R.layout.snippet_layout_hotel_vert, parent, false));
+                mContext).inflate(R.layout.snippet_layout_room, parent, false));
     }
 
     @Override

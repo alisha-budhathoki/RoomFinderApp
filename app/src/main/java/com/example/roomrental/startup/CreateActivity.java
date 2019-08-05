@@ -86,15 +86,15 @@ public class CreateActivity extends AppCompatActivity {
                                                     public void onComplete(@NonNull Task<Void> task) {
                                                         if (task.isSuccessful()) {
                                                             Log.d(TAG, "Email sent.");
-                                                        }
-                                                    }
-                                                });
+
                                         Intent signinIntent = new Intent(CreateActivity.this, HomeActivity.class);
                                         signinIntent.putExtra("email", email);
                                         signinIntent.putExtra("password",pass);
                                         CreateActivity.this.startActivity(signinIntent);
 
-
+                                                        }
+                                                    }
+                                                });
                                     } else {
                                         // If sign in fails, display a message to the user.
                                         Log.w(TAG, "createUserWithEmail:failure", task.getException());

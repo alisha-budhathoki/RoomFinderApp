@@ -1,8 +1,10 @@
 package com.example.roomrental.profile;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
@@ -20,6 +22,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.roomrental.R;
+import com.example.roomrental.room.FirebaseHelper;
 import com.example.roomrental.startup.LoginActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -56,6 +59,8 @@ public class ProfileFragment extends Fragment implements View.OnClickListener{
     TextView userName,userEmail,ratedMovies,avgRating;
     Uri profilePhoto;
     SwipeRefreshLayout mSwipeRefreshLayout;
+    private FirebaseHelper mFirebaseHelper;
+
 
     private static int RESULT_LOAD_IMG = 1;
     String imgDecodableString;
@@ -311,10 +316,9 @@ public class ProfileFragment extends Fragment implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
-        FirebaseAuth.getInstance().signOut();
-        Intent intent = new Intent(getActivity(), LoginActivity.class);
-        startActivity(intent);
-    }
+        confirmLogOut();
+           }
+
 
 
 
@@ -331,5 +335,30 @@ public class ProfileFragment extends Fragment implements View.OnClickListener{
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
+    }
+
+    private   void confirmLogOut() {
+        final AlertDialog.Builder builder = new AlertDialog.Builder(getContext(), R.style.AlertDialog);
+        builder.setTitle("Confirm  Log out?");
+        builder.setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+                mFirebaseHelper.signOut();
+                Intent intent = new Intent(getContext(), LoginActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+                dialog.cancel();
+
+
+            }
+        });
+        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+        builder.show();
     }
 }

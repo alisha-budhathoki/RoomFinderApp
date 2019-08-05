@@ -11,11 +11,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 
-import com.example.roomrental.AddFragment;
-import com.example.roomrental.NotificationFragment;
+import com.example.roomrental.Upload.AddFragment;
+import com.example.roomrental.notifications.NotificationFragment;
 import com.example.roomrental.R;
 import com.example.roomrental.SearchFragment;
-import com.example.roomrental.Setting;
+import com.example.roomrental.settings.Setting;
 import com.example.roomrental.profile.ProfileFragment;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -79,3 +79,4 @@ public class HomeActivity extends AppCompatActivity implements ProfileFragment.O
 
     }
 }
+
